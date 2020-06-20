@@ -1,11 +1,25 @@
-var f;
-var d = '';
 $(document).ready(function() {
   // Get value on button click and show alert
   $("#output").click(function() {
-    f = factorial($('#number').val());
-    d = f+' = ';
-    decomp();
+    var n = parseInt($('#number').val(), 10);
+    var f = factorial(n);
+    var d =n+"! = "+f+' = ';
+
+    if(decomp(2,f)==1 || decomp(2,f)==undefined)
+      d+= '(2)'
+    else
+      d+='(2^' + decomp(2,f)+')';
+
+    for(var i=3; i<n+1; i+=2){
+      if (isPrime(i)){
+        var e = decomp(i,f)
+        if(e != 1)
+          d += '('+i+'^'+e+')';
+          else
+          d += '('+i+')';
+      }
+    }
+
     $('#decomp').text(d);
   });
 });
@@ -19,35 +33,6 @@ function factorial(num) {
   return n;
 }
 
-function decomp() {
-  var subF = f;
-console.log(f);
-  for (var i = 2; subF>=1; i++){
-    //Checks for prime
-    if (isPrime(i)) {
-      var c = 1;
-      for(var e=1; e<subF; e++){
-        if( Math.pow(i,e)>subF || (subF*Math.pow(i,e)%1)!==0){
-          subF -= Math.pow(i,e-1);
-          console.log(subF);
-          e=subF;
-        }
-        else
-          c=e;
-      }
-      if (c==1) {
-        d += "(" + i+ ")"
-      }
-      else{
-        d += "(" + i + "^" + c + ")"
-      }
-
-    }
-  }
-
-
-}
-
 function isPrime(num) {
   for (var i = 2; i < num; i++) {
     if (num % i === 0) {
@@ -55,4 +40,11 @@ function isPrime(num) {
     }
   }
   return true;
+}
+
+function decomp(x,f){
+  for(var i=0; i<f; i++){
+    if(f%Math.pow(x,i)!==0)
+            return i-1;
+  }
 }
