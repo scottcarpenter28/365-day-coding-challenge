@@ -9,5 +9,10 @@
 }
 
 .btn{
-  margin: 5px;;
+  margin: 5px;
+}
+
+.calcButton{
+  height: 20px;
+  width: 50%;
 }
