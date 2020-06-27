@@ -12,6 +12,10 @@
   margin: 5px;
 }
 
+.cbtn {
+  width: 75px;
+}
+
 .calcButton{
   height: 20px;
   width: 50%;
