@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 42</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/caesarCipher.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">Day 42 Caesar cipher: Enter a sentence and a key between 1-26 and this will return the crypted sentence</p>
+    </div>
+  </div>
+  <div class="challenge">
+    <textarea id="str" rows="8" cols="80"></textarea>
+    <input type="number" id="key" min="1" max="26">
+<button type="button" id="output" class="btn btn-primary">Submit</button>
+<a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <h3>Output: </h3>
+    <p id="crypted"></p>
+  </div>
+</body>
+
+</html>
