@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Day 59</title>
+  <title>Day 60</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../scripts/snailSort.js" charset="utf-8"></script>
+  <script src="../scripts/findletter.js" charset="utf-8"></script>
   <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -14,13 +14,14 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <p class="lead">Day 59 Enter a set of numbers(n^2 amount) with spaces between each and this will sort them into a snail shell. Look at console for answer.</p>
+      <p class="lead">Day 60: Enter a set of consecutive letters with spaces between them in order with one missing and this will return the missing one.</p>
     </div>
   </div>
   <div class="challenge">
-        <input type="text" id="nums" autocomplete="off">
-<button type="button" id="output" class="btn btn-primary">Submit</button>
-<a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <input type="text" id="letters" autocomplete="off" placeholder="a b d e f g">
+    <button type="button" id="output" class="btn btn-primary">Submit</button>
+    <a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <p id='ans'></p>
   </div>
 </body>
 
