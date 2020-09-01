@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Day 81</title>
+  <title>Day 82</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../scripts/beggars.js" charset="utf-8"></script>
+  <script src="../scripts/Evaporator.js" charset="utf-8"></script>
   <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -14,12 +14,13 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <p class="lead">Day 80 beggars: Enter a set of numbers(Without spaces between), then how many beggars there are, and this will return how much each beggars gets.</p>
+      <p class="lead">Day 82 Evaporator: Enter a starting amount in ml of a foam/liquid, a percent lost per day, and what percent the evaporator is no longer usefull.</p>
     </div>
   </div>
   <div class="challenge">
-    <input type="number" id="numSet" placeholder="set of numbers">
-    <input type="number" id="beggars" placeholder="beggars">
+    <input type="number" id="evaporatorAmount" placeholder="ml" min="0">
+    <input type="number" id="evapPercent" placeholder="evap %" min="1" max="100">
+    <input type="number" id="percentUsefull" placeholder="last usefull%">
     <button type="button" id="output" class="btn btn-primary">Submit</button>
     <a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
     <p id="ans"></p>
