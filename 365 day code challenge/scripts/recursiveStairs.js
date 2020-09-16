@@ -40,10 +40,10 @@ function negativeStairs(steps, length){
   else {
     var s = '';
     for (var i = 0; i < length; i++) {
-      if (i < Math.abs(steps))
-        s += '_';
-      else
+      if (i < length-Math.abs(steps))
         s += '#';
+      else
+        s += '_';
     }
     return s + '\n' + negativeStairs(steps + 1, length);
   }
