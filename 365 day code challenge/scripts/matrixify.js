@@ -8,7 +8,7 @@ $(document).ready(function() {
         var temp = [];
         for (var k = 0; k < n; k++)
           temp.push(Math.floor(Math.random() * 300));
-        console.log(temp);
+        console.table(temp);
       }
     }
   });
