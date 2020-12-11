@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 181</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/inNDays.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">Day 181 In N Days: Enter a day of the week and a number (N) and this will return what day it is in N days</p>
+    </div>
+  </div>
+  <div class="challenge">
+    <label for="days">Day of the week:</label>
+
+<select name="days" id="day">
+  <option value="0">Sunday</option>
+  <option value="1">Monday</option>
+  <option value="2">Tuesday</option>
+  <option value="3">Wednessday</option>
+  <option value="4">Thursday</option>
+  <option value="5">Friday</option>
+  <option value="6">Saturday</option>
+</select>
+    <input type="number" id="n" min='0'>
+
+    <button type="button" id="output" class="btn btn-primary">Submit</button>
+    <a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <p id="ans"></p>
+  </div>
+</body>
+
+</html>
