@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 187</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/diagonalRug.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">Day 187 Diagonal Rug: Enter a number representing length of a rug, and a direction of a diagonal. This will print out the patern in the console.</p>
+    </div>
+  </div>
+  <div class="challenge">
+
+    <input type="number" id="size" value='5' min="0">
+    <label for="direction">Direction:</label>
+
+    <select name="direction" id="direction">
+      <option value="Left">Left</option>
+      <option value="Right">Right</option>
+    </select>
+
+    <button type="button" id="output" class="btn btn-primary">Submit</button>
+    <a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <p id="ans"></p>
+  </div>
+</body>
+
+</html>
