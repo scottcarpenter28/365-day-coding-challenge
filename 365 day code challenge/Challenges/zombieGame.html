@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 186</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/zombieGame.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">Day 186 Zombie game: Enter the amount of zombies, their starting distance, and how many shots you have. Each second you shoot once, the zombies move .5ft closer. There is a 5% chance that you miss your shot.</p>
+    </div>
+  </div>
+  <div class="challenge">
+
+    <input type="number" id="zombies" value='3' placeholder='Zombies' min="0">
+    <input type="number" id="distance" value="10" placeholder="Distance" min='0'>
+    <input type="number" id="shots" value="10" placeholder='Shots' min='0'>
+
+
+    <button type="button" id="output" class="btn btn-primary">Submit</button>
+    <a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <p id="ans"></p>
+  </div>
+</body>
+
+</html>
