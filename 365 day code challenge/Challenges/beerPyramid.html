@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 224</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/beerPyramid.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">Day 224 Beer pyramid: Enter a price per beer and how much money you have to spend, and this will return how many levels of beers you can get to make a pyramid asuming n^2 per level.</p>
+    </div>
+  </div>
+  <div class="challenge">
+    <input type="number" id="money" value="1500" placeholder="money" min="0">
+    <input type="number" id="cost" value="2" placeholder="beer cost" min='0'>
+    <button type="button" id="output" class="btn btn-primary">Submit</button>
+    <a href="../index.html"><button type="button" name="button" class="btn btn-dark">Home</button></a>
+    <p id="ans"></p>
+  </div>
+</body>
+
+</html>
