@@ -28,10 +28,8 @@ function getTip(num){
 }
 
 function roundTo(num, rnd){
-  for(var i = 0; i < rnd; i++){
-    var temp = num + i;
-    if(temp % rnd == 0)
-      return temp;
-  }
+  var mod = (num % rnd);
+  rnd -= mod;
+  num = num + rnd;
   return num;
 }
