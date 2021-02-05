@@ -13,8 +13,7 @@ function searchAlpha(str){
 
   while(str.length>0){
     var code = str.charCodeAt(0)-97;
-    if(code => 0 && code <= 26)
-      alphabet[code] = 1;
+    alphabet[code] = 1;
     str = str.replaceAll(str.charAt(0),'');
   }
 
