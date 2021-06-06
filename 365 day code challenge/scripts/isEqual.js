@@ -14,12 +14,13 @@ $(document).ready(function() {
 
 
 Array.prototype.isEqual = function(arr, option){
+  console.log(option);
+
   for(var i = 0; i < this.length; i++){
     if(arr[i]!=this[i] && !option)
       return false;
     else if(arr[i]==this[i] && !option)
       continue
-    console.log(!option);
     if(!arr.includes(this[i]) && option)
       return false;
   }
